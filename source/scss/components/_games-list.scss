@@ -1,0 +1,19 @@
+.games-list{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-flow: row dense;
+    grid-auto-rows: min-content;
+    width: 100%;
+    gap: 16px;
+    // min-height: 75vh;
+    grid-area: games;
+
+    @include for-fullhd{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    @include tablet{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

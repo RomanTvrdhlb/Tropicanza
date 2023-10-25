@@ -1,0 +1,41 @@
+.games-menu{
+
+    display: flex;
+    flex-flow: row nowrap;
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+    justify-content: space-between;
+    visibility: visible;
+    grid-area: menu;
+
+    &__link{
+        display: inline-block;
+        padding: 0 24px;
+        line-height: 50px;
+        font-size: 18px;
+        font-weight: 400;
+        text-decoration: none;
+        color: rgba(var(--cl-a),1.0);
+        transition: 0.2s all ease;
+        text-transform: capitalize;
+
+        @include small-tablet{
+            font-size: 14px;
+        }
+
+        &:hover{
+            color: rgba(var(--cl-d),1.0);
+        }
+
+        &.active{
+            font-weight: 900;
+            color: rgba(var(--cl-d),1.0);
+            text-decoration-line: underline;
+        }
+    }
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}

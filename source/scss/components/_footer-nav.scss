@@ -1,0 +1,40 @@
+.footer-nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include tablet{
+        flex-direction: column;
+    }
+
+    &__item{
+        padding: 18px 35px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: max-content;
+
+        @include tablet{
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+
+    &__link{
+        white-space: nowrap;
+        text-decoration: none;
+        color: rgba(var(--cl-a),1.0);
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+        transition: 0.2s all ease;
+        font-family: var(--font-family);
+
+    &:hover{
+        color: rgba(var(--cl-d),1.0);
+    }
+    }
+
+}

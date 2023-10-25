@@ -1,0 +1,67 @@
+// --------------- hex to rgba mixin ---------------
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+:root {
+// --------------- default global variable ---------------
+  --body-bg: #081826;
+  --body-font-size: 14px;
+  --content-width: 1440px;
+  --container-offset: 20px;
+
+  @include small-tablet {
+    --container-offset: 12px;
+  }
+
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+// --------------- default JS variable ---------------
+  // --header-height: 60px;
+
+
+  --default-size: 40px;
+/* width */
+
+// --------------- default scroll variable ---------------
+  --scrollbar-thumb: #3AACFF;
+  // --scrollbar-thumb-hover: #00aff0;
+  --scrollbar-track:  #081826;
+  --scrollbar-track-hover: #081826;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+
+// --------------- default slect variable ---------------
+  --select-inner-bg: #404040;
+  --select-inner-border: #FDFDFD;
+  --select-focus-border: #FDFDFD;
+
+// --------------- default font-family variable ---------------
+  --font-family: "Rubik" , sans-serif; // var(--font-family);
+
+
+// --------------- default text color variable ---------------
+  // --burger-color: #{HexToRGB(#00d655)};
+
+  --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
+  --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
+  --cl-c: #{HexToRGB(#091638)}; // rgba(var(--cl-c),1.0);
+  --cl-d: #{HexToRGB(#3AACFF)}; // rgba(var(--cl-d),1.0);
+  --cl-e: #{HexToRGB(#FFB400)}; // rgba(var(--cl-e),1.0);
+
+// --------------- default background color variable ---------------
+  --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
+  --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
+  --bg-c: #{HexToRGB(#0A2B3E)}; // rgba(var(--bg-c),1.0);
+  --bg-d: #{HexToRGB(#121212)}; // rgba(var(--bg-d),1.0);
+  --bg-e: #{HexToRGB(#0E0E0E)}; // rgba(var(--bg-e),1.0);
+  --bg-f: #{HexToRGB(#1D1D1D)}; // rgba(var(--bg-f),1.0);
+  --bg-g: #{HexToRGB(#091424)}; // rgba(var(--bg-g),1.0);
+
+// --------------- default border color color variable ---------------
+  --br-a: #0067A0; // var(--br-a);
+  --br-b: #252525; // var(--br-b);
+  --br-c: #3AACFF; // var(--br-c);
+  --br-d: #ffffff; // var(--br-d);
+
+
+// -------------
+}

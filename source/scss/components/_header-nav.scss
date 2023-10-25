@@ -1,0 +1,38 @@
+.header-nav{
+    display: grid;
+    grid-auto-flow: column;
+    margin: 0 15px;
+    grid-gap: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+
+    &__item{
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        margin-left: 15px;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        grid-gap: 6px;
+        font-size: 14px;
+        font-weight: 700;
+        transition: 0.2s all ease;
+        text-transform: uppercase;
+
+        &:hover{
+            color: rgba(var(--cl-d),1.0);
+        }
+    }
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
